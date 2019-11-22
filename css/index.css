@@ -56,13 +56,13 @@ body {
   height: 8px;
 }
 *::-webkit-scrollbar-thumb {
-  background: #49b1f5;
+  background: #c99;
 }
 *::-webkit-scrollbar-track {
   background-color: transparent;
 }
 #web_bg {
-  background: http;
+  background: /images/bg1.png;
   height: 100%;
   width: 100%;
   -webkit-background-size: cover;
@@ -109,7 +109,7 @@ h6 code {
 }
 #content-inner .img-alt {
   text-decoration: none;
-  color: #99a9bf;
+  color: #737f8f;
 }
 #toggle-sidebar {
   position: fixed;
@@ -131,7 +131,7 @@ hr {
   position: relative;
   margin: 2rem auto;
   width: calc(100% - 4px);
-  border: 2px dashed #a4d8fa;
+  border: 2px dashed #c1cbd7;
   background: #fff;
 }
 hr:hover:before {
@@ -142,7 +142,7 @@ hr:before {
   top: -10px;
   left: 5%;
   z-index: 1;
-  color: #49b1f5;
+  color: #c99;
   content: '\f0c4';
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 20px;
@@ -157,7 +157,7 @@ details {
   border: 2px solid #d6d6d6;
 }
 details summary {
-  color: #49b1f5;
+  color: #c99;
 }
 .not-code {
   margin: 0.5em;
@@ -172,7 +172,7 @@ table {
   border-collapse: collapse;
 }
 table thead {
-  background: rgba(153,169,191,0.1);
+  background: rgba(115,127,143,0.1);
 }
 table th,
 table td {
@@ -181,7 +181,7 @@ table td {
   vertical-align: top;
 }
 *::selection {
-  background: #00c4b6;
+  background: #a3acb8;
   color: #f7f7f7;
 }
 .full_page #site-title,
@@ -1409,9 +1409,9 @@ figure.highlight {
 blockquote {
   margin: 0;
   padding: 0.1rem 0.8rem;
-  border-left: 0.2rem solid #49b1f5;
+  border-left: 0.2rem solid #c99;
   color: #6a737d;
-  background-color: #e9f5fe;
+  background-color: #fff;
 }
 blockquote p {
   margin: 0 !important;
@@ -1431,7 +1431,7 @@ blockquote footer cite:before {
 .article-container code {
   padding: 0.1rem 0.2rem;
   background: rgba(27,31,35,0.05);
-  color: #f47466;
+  color: #965454;
   word-wrap: break-word;
   font-size: 14px;
 }
@@ -1795,7 +1795,7 @@ blockquote footer cite:before {
 #aside_content .card-author #bookmark-it {
   margin-top: 0.2rem;
   height: 1.6rem;
-  background-color: #49b1f5;
+  background-color: #c99;
   color: #fff;
   text-decoration: none;
   line-height: 1.6rem;
@@ -1807,7 +1807,7 @@ blockquote footer cite:before {
   padding-left: 10px;
 }
 #aside_content .card-author .bookmark--primary {
-  color: #ff7242;
+  color: #bfbfbf;
 }
 #aside_content .card-author .bookmark--animated {
   -webkit-transition-property: color;
@@ -1828,7 +1828,7 @@ blockquote footer cite:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ff7242;
+  background: #bfbfbf;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
   -o-transform: scaleX(0);
@@ -1918,7 +1918,7 @@ blockquote footer cite:before {
   word-break: keep-all;
 }
 #aside_content .card-tag-cloud a:hover {
-  color: #49b1f5 !important;
+  color: #c99 !important;
 }
 #aside_content .aside_recent_item {
   margin: 10px 0 -15px 0;
@@ -1973,7 +1973,7 @@ blockquote footer cite:before {
   padding-left: 10px;
 }
 #aside_content #aside_title .aside_post_title:hover {
-  color: #49b1f5 !important;
+  color: #c99 !important;
 }
 #aside_content .aside_category_item,
 #aside_content .archive-list {
@@ -1994,7 +1994,7 @@ blockquote footer cite:before {
 }
 #aside_content .aside_category_list:hover,
 #aside_content .archive-list-item:hover {
-  background-color: #49b1f5;
+  background-color: #c99;
   color: #363636;
 }
 #aside_content .aside_category_list a,
@@ -2121,7 +2121,7 @@ blockquote footer cite:before {
   position: absolute;
   top: 0;
   left: 0;
-  background: #49b1f5;
+  background: #c99;
   color: #fff;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-out;
@@ -2142,14 +2142,14 @@ blockquote footer cite:before {
   line-height: 1.2rem;
 }
 .category-content ul li:hover:before {
-  border-color: #ff7242;
+  border-color: #bfbfbf;
 }
 .category-content ul li:before {
   top: 10px;
   margin-left: 0.45rem;
   width: 0.3rem;
   height: 0.3rem;
-  border: 0.15rem solid #49b1f5;
+  border: 0.15rem solid #c99;
   border-radius: 0.3rem;
   background: #fff;
   content: "";
@@ -2172,12 +2172,12 @@ blockquote footer cite:before {
 #vcomment button {
   font-size: 0.7rem;
   padding: 0.3rem 1rem;
-  background-color: #49b1f5;
+  background-color: #c99;
   color: #fff;
   border-color: #fff;
 }
 #vcomment button:hover {
-  background-color: #06446c;
+  background-color: #633;
 }
 #vcomment textarea {
   font-size: 0.7rem;
@@ -2213,13 +2213,13 @@ blockquote footer cite:before {
 }
 #vcomment .vat {
   font-size: 0.7125rem;
-  color: #00c4b6;
-  border: 1px solid #00c4b6;
+  color: #ebcfcf;
+  border: 1px solid #ebcfcf;
   padding: 0 0.8rem;
   border-radius: 5px;
 }
 #vcomment .vat:hover {
-  background-color: rgba(0,196,182,0.5);
+  background-color: rgba(235,207,207,0.5);
 }
 #vcomment code,
 #vcomment pre {
@@ -2303,7 +2303,7 @@ blockquote footer cite:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #49b1f5 !important;
+  background: #c99 !important;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -o-transform: scale(0);
@@ -2391,7 +2391,7 @@ blockquote footer cite:before {
 }
 #footer {
   margin-top: 1rem;
-  background: #49b1f5;
+  background: #c99;
   background-attachment: local;
   background-position: bottom;
   -webkit-background-size: cover;
@@ -2430,7 +2430,7 @@ blockquote footer cite:before {
 #nav .nav_bg {
   width: 100%;
   height: 100%;
-  background-color: #49b1f5;
+  background-color: #c99;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2554,7 +2554,7 @@ blockquote footer cite:before {
 #page-header.fixed a:hover,
 #page-header.fixed #site-name:hover,
 #page-header.fixed .toggle-menu:hover {
-  color: #49b1f5;
+  color: #c99;
 }
 #page-header.visible {
   -webkit-transform: translate3d(0, 100%, 0);
@@ -2649,7 +2649,7 @@ blockquote footer cite:before {
 }
 #page-header .menus_item .menus_item_child li:hover a,
 #page-header .menus_item .menus_item_child li:hover i {
-  color: #49b1f5;
+  color: #c99;
 }
 #page-header .menus_item .menus_item_child li a {
   color: #3b3a3a;
@@ -2672,7 +2672,7 @@ blockquote footer cite:before {
   z-index: -1;
   width: 0;
   height: 3px;
-  background-color: #80c8f8;
+  background-color: #dbb8b8;
   content: "";
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -2841,7 +2841,7 @@ blockquote footer cite:before {
   width: 70%;
 }
 #mobile-sidebar #mobile-sidebar-menus .menus_items span:hover {
-  color: #49b1f5;
+  color: #c99;
 }
 #mobile-sidebar #mobile-sidebar-menus .menus_items .menus-expand {
   position: absolute;
@@ -2895,7 +2895,7 @@ blockquote footer cite:before {
   color: #3b3a3a;
 }
 #mobile-sidebar a:hover {
-  color: #49b1f5;
+  color: #c99;
 }
 .open-mobile-menus,
 .open-mobile-toc {
@@ -2973,9 +2973,8 @@ blockquote footer cite:before {
   margin: 10px 0;
   padding: 15px;
   position: relative;
-  background-color: #f9f9f9;
-  border: initial;
-  border-left: 5px solid #eee;
+  background-color: #f5f5f5;
+  border: 1px solid transparent;
   border-radius: 3px;
 }
 .note h2,
@@ -2983,7 +2982,7 @@ blockquote footer cite:before {
 .note h4,
 .note h5,
 .note h6 {
-  margin-top: 3px;
+  margin-top: 0;
   border-bottom: initial;
   margin-bottom: 0;
   padding-top: 0 !important;
@@ -3006,105 +3005,95 @@ blockquote footer cite:before {
 .note img:last-child {
   margin-bottom: 0 !important;
 }
-.note:not(.no-icon) {
-  padding-left: 45px;
-}
-.note:not(.no-icon)::before {
-  font-family: 'FontAwesome';
-  font-size: larger;
-  left: 15px;
-  position: absolute;
-  top: 13px;
-}
 .note.default {
-  background-color: #f7f7f7;
-  border-left-color: #777;
+  background-color: #f3f3f3;
+  border-color: #e1e1e1;
+  color: #666;
 }
-.note.default h2,
-.note.default h3,
-.note.default h4,
-.note.default h5,
-.note.default h6 {
-  color: #777;
+.note.default a:not(.btn),
+.note.default span.exturl:not(.btn) {
+  border-bottom: 1px solid #666;
+  color: #666;
 }
-.note.default:not(.no-icon)::before {
-  content: "\f0a9";
-  color: #777;
+.note.default a:not(.btn):hover,
+.note.default span.exturl:not(.btn):hover {
+  border-bottom: 1px solid #454545;
+  color: #454545;
 }
 .note.primary {
-  background-color: #f5f0fa;
-  border-left-color: #6f42c1;
-}
-.note.primary h2,
-.note.primary h3,
-.note.primary h4,
-.note.primary h5,
-.note.primary h6 {
+  background-color: #f3daff;
+  border-color: #e1c2ff;
   color: #6f42c1;
 }
-.note.primary:not(.no-icon)::before {
-  content: "\f055";
+.note.primary a:not(.btn),
+.note.primary span.exturl:not(.btn) {
+  border-bottom: 1px solid #6f42c1;
   color: #6f42c1;
+}
+.note.primary a:not(.btn):hover,
+.note.primary span.exturl:not(.btn):hover {
+  border-bottom: 1px solid #453298;
+  color: #453298;
 }
 .note.info {
-  background-color: #eef7fa;
-  border-left-color: #428bca;
+  background-color: #d9edf7;
+  border-color: #b3e5ef;
+  color: #31708f;
 }
-.note.info h2,
-.note.info h3,
-.note.info h4,
-.note.info h5,
-.note.info h6 {
-  color: #428bca;
+.note.info a:not(.btn),
+.note.info span.exturl:not(.btn) {
+  border-bottom: 1px solid #31708f;
+  color: #31708f;
 }
-.note.info:not(.no-icon)::before {
-  content: "\f05a";
-  color: #428bca;
+.note.info a:not(.btn):hover,
+.note.info span.exturl:not(.btn):hover {
+  border-bottom: 1px solid #215761;
+  color: #215761;
 }
 .note.success {
-  background-color: #eff8f0;
-  border-left-color: #5cb85c;
+  background-color: #dff0d8;
+  border-color: #d0e6be;
+  color: #3c763d;
 }
-.note.success h2,
-.note.success h3,
-.note.success h4,
-.note.success h5,
-.note.success h6 {
-  color: #5cb85c;
+.note.success a:not(.btn),
+.note.success span.exturl:not(.btn) {
+  border-bottom: 1px solid #3c763d;
+  color: #3c763d;
 }
-.note.success:not(.no-icon)::before {
-  content: "\f058";
-  color: #5cb85c;
+.note.success a:not(.btn):hover,
+.note.success span.exturl:not(.btn):hover {
+  border-bottom: 1px solid #32562c;
+  color: #32562c;
 }
 .note.warning {
-  background-color: #fdf8ea;
-  border-left-color: #f0ad4e;
+  background-color: #fcf4e3;
+  border-color: #fae4cd;
+  color: #8a6d3b;
 }
-.note.warning h2,
-.note.warning h3,
-.note.warning h4,
-.note.warning h5,
-.note.warning h6 {
-  color: #f0ad4e;
+.note.warning a:not(.btn),
+.note.warning span.exturl:not(.btn) {
+  border-bottom: 1px solid #8a6d3b;
+  color: #8a6d3b;
 }
-.note.warning:not(.no-icon)::before {
-  content: "\f06a";
-  color: #f0ad4e;
+.note.warning a:not(.btn):hover,
+.note.warning span.exturl:not(.btn):hover {
+  border-bottom: 1px solid #714f30;
+  color: #714f30;
 }
 .note.danger {
-  background-color: #fcf1f2;
-  border-left-color: #d9534f;
+  background-color: #f2dfdf;
+  border-color: #ebcdd2;
+  color: #a94442;
 }
-.note.danger h2,
-.note.danger h3,
-.note.danger h4,
-.note.danger h5,
-.note.danger h6 {
-  color: #d9534f;
+.note.danger a:not(.btn),
+.note.danger span.exturl:not(.btn) {
+  border-bottom: 1px solid #a94442;
+  color: #a94442;
 }
-.note.danger:not(.no-icon)::before {
-  content: "\f056";
-  color: #d9534f;
+.note.danger a:not(.btn):hover,
+.note.danger span.exturl:not(.btn):hover {
+  border-bottom: 1px solid #84333f;
+  color: #84333f;
 }
 .layout_page {
   display: -webkit-box;
@@ -3212,7 +3201,7 @@ blockquote footer cite:before {
   color: #858585;
 }
 #recent-posts .article-meta .sticky {
-  color: #ff7242;
+  color: #bfbfbf;
 }
 #recent-posts .article-meta i {
   margin: 0 0.2rem 0 0.3rem;
@@ -3248,7 +3237,7 @@ blockquote footer cite:before {
   word-wrap: break-word;
 }
 #recent-posts .article-title:hover {
-  color: #49b1f5 !important;
+  color: #c99 !important;
 }
 .tag-cloud {
   padding: 40px 44px 44px;
@@ -3265,7 +3254,7 @@ blockquote footer cite:before {
   transition: all 0.3s;
 }
 .tag-cloud a:hover {
-  color: #ff7242 !important;
+  color: #bfbfbf !important;
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -3320,7 +3309,7 @@ blockquote footer cite:before {
 }
 .article-sort {
   padding-left: 1rem;
-  border-left: 2px solid #a4d8fa;
+  border-left: 2px solid #c1cbd7;
 }
 .article-sort-title {
   position: relative;
@@ -3330,7 +3319,7 @@ blockquote footer cite:before {
   line-height: 1;
 }
 .article-sort-title:hover:before {
-  border-color: #ff7242;
+  border-color: #bfbfbf;
 }
 .article-sort-title:before {
   position: absolute;
@@ -3339,7 +3328,7 @@ blockquote footer cite:before {
   z-index: 1;
   width: 0.5rem;
   height: 0.5rem;
-  border: 0.25rem solid #49b1f5;
+  border: 0.25rem solid #c99;
   border-radius: 0.5rem;
   background: #fff;
   content: "";
@@ -3357,7 +3346,7 @@ blockquote footer cite:before {
   z-index: 0;
   width: 0.1rem;
   height: 1.3rem;
-  background: #a4d8fa;
+  background: #c1cbd7;
   content: "";
 }
 .article-sort-item {
@@ -3370,7 +3359,7 @@ blockquote footer cite:before {
   transition: all 0.2s ease-in-out;
 }
 .article-sort-item:hover:before {
-  border-color: #ff7242;
+  border-color: #bfbfbf;
 }
 .article-sort-item:before {
   position: absolute;
@@ -3378,7 +3367,7 @@ blockquote footer cite:before {
   left: calc(-1rem - 17px);
   width: 0.3rem;
   height: 0.3rem;
-  border: 0.15rem solid #49b1f5;
+  border: 0.15rem solid #c99;
   border-radius: 0.3rem;
   background: #fff;
   content: "";
@@ -3393,14 +3382,14 @@ blockquote footer cite:before {
   font-size: 1rem;
 }
 .article-sort-item.year:hover:before {
-  border-color: #49b1f5;
+  border-color: #c99;
 }
 .article-sort-item.year:before {
   top: 0.7rem;
-  border-color: #ff7242;
+  border-color: #bfbfbf;
 }
 .article-sort-item__time {
-  color: #99a9bf;
+  color: #737f8f;
   font-size: 0.7rem;
   padding-left: 0.4rem;
 }
@@ -3419,7 +3408,7 @@ blockquote footer cite:before {
   transition: all 0.3s;
 }
 .article-sort-item__title:hover {
-  color: #49b1f5;
+  color: #c99;
   -webkit-transform: translateX(20px);
   -moz-transform: translateX(20px);
   -o-transform: translateX(20px);
@@ -3449,7 +3438,7 @@ blockquote footer cite:before {
   cursor: pointer;
 }
 .article-sort-item__post:hover {
-  color: #99a9bf;
+  color: #737f8f;
 }
 .article-sort-img {
   height: 80px;
@@ -3477,7 +3466,7 @@ blockquote footer cite:before {
 }
 .category-list .category-list-count {
   margin-left: 0.4rem;
-  color: #99a9bf;
+  color: #737f8f;
 }
 .category-list .category-list-count:before {
   content: "(";
@@ -3544,7 +3533,7 @@ blockquote footer cite:before {
   text-align: center;
 }
 #pagination .space {
-  color: #99a9bf;
+  color: #737f8f;
 }
 #pagination .page-number {
   display: inline-block;
@@ -3556,7 +3545,7 @@ blockquote footer cite:before {
   cursor: pointer;
 }
 #pagination .page-number.current {
-  background: #00c4b6;
+  background: #ebcfcf;
   color: #fff;
   cursor: default;
 }
@@ -3693,7 +3682,7 @@ blockquote footer cite:before {
 #top-container {
   position: relative;
   margin-bottom: 1rem;
-  background-color: #49b1f5;
+  background-color: #c99;
   background-attachment: local;
   background-position: center;
   -webkit-background-size: cover;
@@ -3761,10 +3750,10 @@ blockquote footer cite:before {
   width: fit-content;
   margin: 0.4rem 0.4rem 0.4rem 0;
   padding: 0rem 0.6rem;
-  border: 1px solid #49b1f5;
+  border: 1px solid #c99;
   border-radius: 0.6rem;
   background: #fff;
-  color: #49b1f5;
+  color: #c99;
   text-decoration: none;
   font-size: 12px;
   cursor: pointer;
@@ -3775,7 +3764,7 @@ blockquote footer cite:before {
   transition: all 0.2s ease-in-out;
 }
 .post-meta__tags:hover {
-  background: #49b1f5;
+  background: #c99;
   color: #fff;
 }
 #post-content ol,
@@ -3800,7 +3789,7 @@ blockquote footer cite:before {
   padding-left: 0.3rem;
 }
 a {
-  color: #99a9bf;
+  color: #737f8f;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -3808,7 +3797,7 @@ a {
   transition: all 0.2s;
 }
 a:hover {
-  color: #49b1f5;
+  color: #c99;
   text-decoration: none;
 }
 a#site-name {
@@ -3925,7 +3914,7 @@ img:hover {
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 0.8rem;
-  background: #49b1f5;
+  background: #c99;
   content: "";
 }
 .post-copyright:after {
@@ -3943,7 +3932,7 @@ img:hover {
   box-shadow: 0 0 8px 0 rgba(232,237,250,0.6), 0 2px 4px 0 rgba(232,237,250,0.5);
 }
 .post-copyright-meta {
-  color: #49b1f5;
+  color: #c99;
   font-weight: bold;
 }
 .post-copyright-info a {
@@ -4022,7 +4011,7 @@ img:hover {
 }
 .layout_post #post a {
   text-decoration: none;
-  color: #49b1f5;
+  color: #c99;
 }
 .layout_post #post h1,
 .layout_post #post h2,
@@ -4262,11 +4251,11 @@ img:hover {
   cursor: pointer;
   color: #fff;
   line-height: 36px;
-  background: #49b1f5;
+  background: #c99;
   width: 80px;
 }
 .post-reward .reward-button:hover {
-  background: #09629c;
+  background: #844;
 }
 .post-reward .reward-button:hover .reward-main {
   display: block;
@@ -4351,7 +4340,7 @@ img:hover {
 #rightside #rightside_config {
   width: 30px;
   height: 30px;
-  background-color: #49b1f5;
+  background-color: #c99;
   color: #fff;
   text-align: center;
   line-height: 29px;
@@ -4369,7 +4358,7 @@ img:hover {
 #rightside #mobile-toc-button:hover,
 #rightside #go-up:hover,
 #rightside #rightside_config:hover {
-  background-color: #ff7242;
+  background-color: #bfbfbf;
 }
 #rightside #rightside_config i {
   -webkit-animation: avatar_turn_around 2s linear infinite;
@@ -4381,7 +4370,7 @@ img:hover {
 #rightside .translate_chn_to_cht {
   width: 30px;
   height: 30px;
-  background-color: #49b1f5;
+  background-color: #c99;
   color: #fff;
   text-align: center;
   line-height: 29px;
@@ -4392,7 +4381,7 @@ img:hover {
   text-decoration: none;
 }
 #rightside .translate_chn_to_cht:hover {
-  background-color: #ff7242;
+  background-color: #bfbfbf;
 }
 #rightside #mobile-toc-button {
   display: none;
@@ -4449,15 +4438,15 @@ img:hover {
   transition: all 0.2s ease-in-out;
 }
 #sidebar .sidebar-toc .toc-link.active {
-  border-right-color: #009d92;
-  background: #00c4b6;
+  border-right-color: #d19191;
+  background: #ebcfcf;
   color: #fff;
 }
 #sidebar .sidebar-toc__progress {
   position: relative;
   margin-top: -0.3rem;
   padding-left: 0.6rem;
-  color: #00c4b6;
+  color: #ebcfcf;
 }
 #sidebar .sidebar-toc__progress .progress-notice {
   margin-right: 0.4rem;
@@ -4469,7 +4458,7 @@ img:hover {
 #sidebar .sidebar-toc__progress-bar {
   width: 0;
   height: 1px;
-  background: #00c4b6;
+  background: #ebcfcf;
 }
 [data-theme="dark"] body {
   color: #99a9bf;
@@ -4793,11 +4782,11 @@ img:hover {
   transition: color 0.2s ease-in-out;
 }
 .search-dialog span.search-close-button:hover {
-  color: #49b1f5;
+  color: #c99;
 }
 .search-dialog__title {
   padding: 0 0 0.7rem;
-  color: #49b1f5;
+  color: #c99;
   font-size: 1rem;
   line-height: 1;
 }
@@ -4833,7 +4822,7 @@ img:hover {
   padding: 0.25rem 0.7rem;
   width: 100%;
   outline: none;
-  border: 2px solid #49b1f5;
+  border: 2px solid #c99;
   border-radius: 2rem;
   font-size: 14px;
 }
@@ -4842,7 +4831,7 @@ img:hover {
   padding-left: 1.5rem;
 }
 #local-search .local-search__hit-item:hover:before {
-  border-color: #ff7242;
+  border-color: #bfbfbf;
 }
 #local-search .local-search__hit-item:before {
   position: absolute;
@@ -4850,7 +4839,7 @@ img:hover {
   left: 0;
   width: 0.3rem;
   height: 0.3rem;
-  border: 0.15rem solid #49b1f5;
+  border: 0.15rem solid #c99;
   border-radius: 0.3rem;
   background: #fff;
   content: "";
@@ -4869,7 +4858,7 @@ img:hover {
   cursor: pointer;
 }
 #local-search .local-search__hit-item a:hover {
-  color: #49b1f5;
+  color: #c99;
 }
 #local-search .local-search-stats__hr {
   display: none !important;
