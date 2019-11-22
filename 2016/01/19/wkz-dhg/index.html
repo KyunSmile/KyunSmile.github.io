@@ -1,0 +1,169 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>读《悟空传》 | 琴韵居</title><meta name="description" content="读《悟空传》"><meta name="keywords" content="书评"><meta name="author" content="筠子"><meta name="copyright" content="筠子"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/images/fav.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="读《悟空传》"><meta name="twitter:description" content="读《悟空传》"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png"><meta property="og:type" content="article"><meta property="og:title" content="读《悟空传》"><meta property="og:url" content="http://kyunsmile.github.io/2016/01/19/wkz-dhg/"><meta property="og:site_name" content="琴韵居"><meta property="og:description" content="读《悟空传》"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://kyunsmile.github.io/2016/01/19/wkz-dhg/"><link rel="prev" title="1Q84-B2 | Chap21-24 阅读笔记" href="http://kyunsmile.github.io/2016/03/19/1Q84/"><link rel="next" title="挥兹一觞，陶然自乐 完" href="http://kyunsmile.github.io/2016/01/13/hcys_trzl_3/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"./public/search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight_copy: 'true',
+  highlight_lang: 'true',
+  highlight_shrink: 'false',
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  copyright: undefined,
+  copy_copyright_js: false,
+  ClickShowText: undefined,
+  medium_zoom: 'false',
+  Snackbar: undefined
+  
+}</script></head><body><div id="header"> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">琴韵居</a></span><i class="fa fa-bars fa-fw toggle-menu pull_right close" aria-hidden="true"></i><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/moonbeam"><i class="fa-fw fa fa-moon-o"></i><span> 逐月华</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/books/"><i class="fa-fw fa fa-book"></i><span> 撷琼芳</span></a></li><li><a class="site-page" href="/streams"><i class="fa-fw fa fa-tint"></i><span> 涉清溪</span></a></li></ul></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="lazyload avatar_img" src="/images/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'"></div><div class="mobile_post_data"><div class="mobile_data_item is_center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">121</div></a></div></div><div class="mobile_data_item is_center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">28</div></a></div></div><div class="mobile_data_item is_center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">5</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/moonbeam"><i class="fa-fw fa fa-moon-o"></i><span> 逐月华</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/books/"><i class="fa-fw fa fa-book"></i><span> 撷琼芳</span></a></li><li><a class="site-page" href="/streams"><i class="fa-fw fa fa-tint"></i><span> 涉清溪</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png)"><div id="post-info"><div id="post-title"><div class="posttitle">读《悟空传》</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2016-01-19<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> 更新于 2019-05-04</time><span class="post-meta__separator mobile_hidden">|</span><span class="mobile_hidden"><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E5%90%83%E4%B9%A6%E4%B9%A6%EF%BC%8C%E5%8F%98%E9%A5%B1%E9%A5%B1/">吃书书，变饱饱</a></span><div class="post-meta-wordcount"><i class="fa fa-eye post-meta__icon" aria-hidden="true">       </i><span>阅读量: </span><span id="busuanzi_value_page_pv"></span></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><p>悟空传，这本书，我一口气读了两遍。</p>
+<p>第一遍时感觉震撼，第二遍时感觉愈发震撼。</p>
+<p>事实上在很久以前我就听过它，也在很久以前就看过它。算是慕名而去，可惜翻了寥寥几页便觉得如同小孩子的信手涂鸦一般，用着没有多少特色的文笔，写着完全乱来的剧情，于是想着此书也不过如此，怏怏然丢开。</p>
+<a id="more"></a>
+
+<p>此番相逢也是缘分。</p>
+<p>恰好当时在等kindle的过程中，决定要刷多看。恰好多看首页正好封推悟空传。恰好我忘记当时所嫌弃的它书名为何。于是我点进去，开始看。</p>
+<p>我很庆幸这一版是新编的，加上了今何在的序言。否则我在翻开第一章记忆复苏的瞬间，就会选择退出。但是我看了序言，听到了作者的话：西游，是一个彻彻底底的阴谋。就这样被打动，于是接着往后翻，听今何在书写的西游故事。</p>
+<p>正如同很多年前，我把它当作一本无聊的yy小说。第一遍看时，我也给它定错了位。把它当做一本需要整理思路的非线性叙事的书，于是疲于前翻后翻，理清故事主线。</p>
+<p>对，说实话，即使看了很多西游记的动画片和电视剧，我对整个故事也还没有足够的轮廓，只知道大圣大闹天宫之后被镇压在五指山之下，被玄奘唤醒，不知道为什么地戴上了金箍，再拉上几个配角，一起走上了西行之路。</p>
+<p>对主线的认识尚且只有如此，对于阿紫，阿瑶之类的人物，更是半点印象都没有。</p>
+<p>不过不打紧，悟空传这本书，说的是西游记的故事，说的也是他自己的故事。不是颠覆，是诠释，新的诠释。</p>
+<p>唐僧。金蝉子。</p>
+<p>孙悟空。石头。齐天大圣。美猴王。</p>
+<p>猪八戒。天蓬元帅。以及月神，阿月。</p>
+<p>沙和尚。卷帘大将。琉璃盏。</p>
+<p>万森之女。阿瑶。</p>
+<p>白晶晶。</p>
+<p>阿紫。松鼠。</p>
+<p>白龙马。小龙女。</p>
+<p>抑或刹那间的爆发，抑或在压抑中死去。</p>
+<p>作者说得很少，却也足够多，足够让你看到每个人的故事，让你感受到每一个人的情感。我逐渐明白悟空传并不只是悟空传，是一群人的追寻想要的东西的故事，是一群人西行的故事，是一群人在等待着一群人在改变着的故事，是一群人挣扎着死去仿佛胜利了又仿佛没有胜利的故事。</p>
+<p>或许我并不需要刻意去整理剧情，因为在这里，时间线并不重要，重要的是因果。文字所称述的也并不重要，它所展现的也不过是冰山一角而已罢了，重要的是，你看见了什么。</p>
+<p>怀着这样的心情与认识，我开始了二周目。</p>
+<p>事实上，我得到很多新的体验。</p>
+<p>比如发现貌似朴素平和的文笔，并不如所表现的那么纯良无害，有些字词用得相当有力度，入木三分，甚至还有掩不住的锐利。</p>
+<p>而有了一周目的铺垫之后，发现剧情里面好多普通的对话，就能莫名其妙地打动你。对话的背后，总有一股劲，一股气，是独属于那些人物的精神所散发出的。</p>
+<p>即使把其余的描述剥离，只留下对话，你依然能够笃定，说这句话的是他，而不是其他的什么人。</p>
+<p>最终剧情模糊乃至淡忘，激荡在心间的久久不绝的，依旧是角色们永不消散的精神。</p>
+<p>记得自己前世是天边一抹晚霞的紫霞，日日看着日落的紫霞，被称呼为“微笑的紫霞”的紫霞，孤单却不寂寞的紫霞，想要点醒悟空却阴差阳错给了他致命一击的紫霞，用紫霞染就披风给孙悟空的紫霞，不知道自己在悟空心中占据多大的地位的紫霞，等待着孙悟空归来的紫霞。</p>
+<p>采蟠桃的阿瑶，温柔善良的阿瑶，叛出天庭的阿瑶，变成万森之女的阿瑶，变得丑陋的阿瑶，想告诉悟空一切却又痛得什么都说不出来只能流泪的紫霞。</p>
+<p>拒绝忘记宁可承受一切的天蓬，变成了猪的天蓬，不想任由人摆布的天蓬，和阿月死在火里的天蓬。</p>
+<p>敢于质疑佛祖的金蝉子，赌上一切的金蝉子，化身为玄奘的金蝉子，心意通明的金蝉子。</p>
+<p>不甘愿嫁作天庭妃子的小龙女，甘愿成为坐骑的小龙女，邂逅过江流的小龙女，永远不会告诉玄奘她是谁的小龙女。</p>
+<p>以及本文最主要最主要最主要的角色，淡忘曾经抑或假装淡忘曾经的——</p>
+<p>齐天大神，孙悟空。</p>
+<p>五百年很久吗，足够让你忘记一切吗，足够让你丢掉自己吗，足够让你失却曾经的志向吗？</p>
+<p>五百年，怎么好像过了那么久。</p>
+<p>连自己的力量都无法相信的我，要怎么战胜你，假悟空？</p>
+<p>为什么你是那么的意气风发，那么的狂妄恣意，而我却要日日在梦魇里挣扎？</p>
+<p>你是不是另一个我，却和我走了不同的路？</p>
+<p>我好羡慕你，好羡慕你，有那么多好兄弟，有那么多追随着你的人。</p>
+<p>而我呢？我有什么，大概不过是生来就戴着的金箍吧。</p>
+<p>西行路上，有好多人，说他们认识我，原来他们认错了人，把我当成了你。</p>
+<p>可是，假悟空，性格与我截然不同的你，为何对我的招数那般熟悉，就如同我自己一样？</p>
+<p>即使这样，我也要杀了你，因为你是美猴王啊，只有亲手杀了你，我才能摘下金箍，成为佛。</p>
+<p>就算成了神仙，在他们的眼里，我也依然是异类吧，但我没得选，我只能这么走，只能全力以赴。</p>
+<p>然后你死了，你死时手里紧紧攥着紫霞染就的披风，你死时阿紫泣不成声。</p>
+<p>于是我也死了。我战胜了你，也杀了我自己。</p>
+<p>原来你就是我。能战胜我的只有我自己，所以他们让我杀了我。</p>
+<p>如果西行注定是一场阴谋，为什么要让我记起一切。</p>
+<p>还好，我赢了。因为我——</p>
+<p>宁愿死，不愿败。</p>
+<p><code>bgm：顽石-萧忆情</code></p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined" target="_blank" rel="noopener">筠子</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://kyunsmile.github.io/2016/01/19/wkz-dhg/">http://kyunsmile.github.io/2016/01/19/wkz-dhg/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://kyunsmile.github.io">琴韵居</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E4%B9%A6%E8%AF%84/">书评    </a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2016/03/19/1Q84/"><img class="prev_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>1Q84-B2 | Chap21-24 阅读笔记</span></div></a></div><div class="next-post pull_right"><a href="/2016/01/13/hcys_trzl_3/"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>挥兹一觞，陶然自乐 完</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2017/04/29/ReadingApril2017/" title="四月阅读盘点|巨人的陨落|无人生还|尘埃落定"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png"><div class="relatedPosts_title">四月阅读盘点|巨人的陨落|无人生还|尘埃落定</div></a></div><div class="relatedPosts_item"><a href="/2016/05/28/201605reading/" title="五月阅读盘点|人类简史|我不知道该说什么关于生命还是爱情|基督山伯爵|罗辑思维"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png"><div class="relatedPosts_title">五月阅读盘点|人类简史|我不知道该说什么关于生命还是爱情|基督山伯爵|罗辑思维</div></a></div><div class="relatedPosts_item"><a href="/2017/07/23/ReadingJuly2017/" title="七月阅读盘点|良陈美锦|世婚|长嫡|将夜|好好学习"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png"><div class="relatedPosts_title">七月阅读盘点|良陈美锦|世婚|长嫡|将夜|好好学习</div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = false == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'S6M2ACfRK3ikdgAO3LqOyuSk-gzGzoHsz',
+  appKey:'oLXw2HabYWKSWLj05DEatVRb',
+  placeholder:'Please leave your footprints',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></div><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2019 By 筠子</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script async src="/js/search/local-search.js"></script><script src="/js/tw_cn.js"></script><script>translateInitilization()
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>

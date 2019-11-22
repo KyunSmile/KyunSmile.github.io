@@ -1,0 +1,192 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>PID part1 | 琴韵居</title><meta name="description" content="PID part1"><meta name="keywords" content="PID"><meta name="author" content="筠子"><meta name="copyright" content="筠子"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/images/fav.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="PID part1"><meta name="twitter:description" content="PID part1"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png"><meta property="og:type" content="article"><meta property="og:title" content="PID part1"><meta property="og:url" content="http://kyunsmile.github.io/2015/08/06/PID%20part1/"><meta property="og:site_name" content="琴韵居"><meta property="og:description" content="PID part1"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://kyunsmile.github.io/2015/08/06/PID%20part1/"><link rel="prev" title="PID part2" href="http://kyunsmile.github.io/2015/08/07/PID%20part2/"><link rel="next" title="杂志《读者》" href="http://kyunsmile.github.io/2015/06/29/%E6%9D%82%E5%BF%97%E3%80%8A%E8%AF%BB%E8%80%85%E3%80%8B/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"./public/search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight_copy: 'true',
+  highlight_lang: 'true',
+  highlight_shrink: 'false',
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  copyright: undefined,
+  copy_copyright_js: false,
+  ClickShowText: undefined,
+  medium_zoom: 'false',
+  Snackbar: undefined
+  
+}</script></head><body><div id="header"> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">琴韵居</a></span><i class="fa fa-bars fa-fw toggle-menu pull_right close" aria-hidden="true"></i><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/moonbeam"><i class="fa-fw fa fa-moon-o"></i><span> 逐月华</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/books/"><i class="fa-fw fa fa-book"></i><span> 撷琼芳</span></a></li><li><a class="site-page" href="/streams"><i class="fa-fw fa fa-tint"></i><span> 涉清溪</span></a></li></ul></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="lazyload avatar_img" src="/images/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'"></div><div class="mobile_post_data"><div class="mobile_data_item is_center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">121</div></a></div></div><div class="mobile_data_item is_center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">28</div></a></div></div><div class="mobile_data_item is_center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">5</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/moonbeam"><i class="fa-fw fa fa-moon-o"></i><span> 逐月华</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/books/"><i class="fa-fw fa fa-book"></i><span> 撷琼芳</span></a></li><li><a class="site-page" href="/streams"><i class="fa-fw fa fa-tint"></i><span> 涉清溪</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png)"><div id="post-info"><div id="post-title"><div class="posttitle">PID part1</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2015-08-06<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> 更新于 2019-05-03</time><span class="post-meta__separator mobile_hidden">|</span><span class="mobile_hidden"><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E5%93%BC%EF%BC%8C%E6%9C%AC%E5%AE%9D%E5%AE%9D%E6%9C%80%E5%8E%8C%E5%AD%A6%E4%BA%86/">哼，本宝宝最厌学了</a></span><div class="post-meta-wordcount"><i class="fa fa-eye post-meta__icon" aria-hidden="true">       </i><span>阅读量: </span><span id="busuanzi_value_page_pv"></span></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><blockquote>
+<p><strong>PID整定口诀</strong><br>参数整定找最佳，从小到大顺序查。<br>先是比例后积分，最后再把微分加。<br>曲线振荡很频繁，比例度盘要放大。<br>曲线漂浮绕大弯，比例度盘往小扳。<br>曲线偏离回复慢，积分时间往下降。<br>曲线波动周期长，积分时间再加长。<br>曲线振荡频率快，先把微分降下来。<br>动差大来波动慢，微分时间应加长。<br>理想曲线两个波，前高后低四比一。<br>一看二调多分析，调节质量不会低。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>#调节器#<br>调节器是人的大脑，是一个调节系统的核心。任何一个控制系统，只要具备了带有PID的大脑或者说是控制方法，那它就是自动调节系统。<br>基本的调节器具有两个<code>输入量</code>：被测量和设定值。<br>被调量就是反应被调对象的实际波动的量值。<br>设定值是人们期望被调量需要达到的值。<br>基本的调节器至少有一个模拟量<code>输出</code>。大脑根据情况运算之后要发布命令了，它发布一个精确的命令让执行机构去按照它的要求动作。</p>
+<p>以上三个量，可精简为两个：输入偏差和输出指令。</p>
+<p>#PID#<br>P：比例，输入偏差乘以一个系数；<br>I：积分，对输入偏差进行积分运算；<br>D：微分，对输入偏差进行微分运算。</p>
+<p>即：先把系统调为纯比例作用，然后增强比例作用让系统震荡，记录下比例作用和振荡周期，然后将这个比例作用乘以0.6，积分用作适当延长。</p>
+<p>$K_p=0.6K_m$<br>$K_d=\frac{K_pπ}{4\omega}$<br>$K_i=\frac{K_p\omega}{\pi}$</p>
+<p>其中：</p>
+<ul>
+<li>$K_p$为比例控制参数 </li>
+<li>$K_d$为积分控制参数</li>
+<li>$K_i$为微分控制参数</li>
+<li>$K_m$为系统开始振荡时的比例值</li>
+<li>$\omega$为极坐标下振荡时的频率</li>
+</ul>
+<p>#整定参数#<br>##观察哪些曲线##</p>
+<ul>
+<li>设定值。作为比较判断依据；</li>
+<li>被测量波动曲线。</li>
+<li>PID输出<br>如果是串级调节系统，我们还要收集</li>
+<li>副调的被测量曲线</li>
+<li>PID输出曲线</li>
+</ul>
+<p>##整定参数##<br>整定参数的方法有理论计算法和实验试凑法（-&gt;趋势读定法）。</p>
+<p><code>趋势读定法</code>三要素：设定值、被测量、输出。</p>
+<p>##几个基本概念##</p>
+<ul>
+<li>单回路：只有一个PID</li>
+<li>串级：多个PID串接</li>
+<li>主调：串级系统中，要调节被调量的PID</li>
+<li>副调：串级系统中，输出直接去只为执行器动作的那个PID叫做副调。主调的输出进入副调作为副调的设定值。<blockquote>
+<p>一般来说，主调为了调节被调量，副调为了消除干扰。</p>
+</blockquote>
+</li>
+<li>正作用</li>
+<li>副作用</li>
+<li>动态偏差</li>
+<li>静态偏差：调节趋于稳定之后，被调量和设定值之前还存在的偏差叫做静态偏差。</li>
+<li>回调：调节器调节作用显现，使得被调量开始由上升变为下降，或者由下降变为上升。</li>
+<li>阶跃</li>
+</ul>
+<p>##P纯比例作用趋势图的特征分析##<br>P就是比例作用，把调节器的输入偏差乘以一个系数，作为调节器的输出。<br>输出波动=被调量波动*比例增益<br>=&gt;对于一个单回路调节系统，单纯的比例作用下，输出的波形与被调量的波形<code>完全相似</code>。</p>
+<ul>
+<li>对于正作用的调节系统，顶点、谷底均发生在同一时刻。</li>
+<li>对于负作用的调节系统，被调量的顶点就是输出的谷底，谷底就是输出的顶点。</li>
+<li>对于正作用的调节系统，被调量的曲线上升，输出曲线就上升；被调量曲线下降，输出曲线就下降。两者趋势完全一样。</li>
+<li>对于负作用的调节系统，被调量曲线和输出曲线相对。波动周期完全一致。</li>
+<li>只要被调量变化，输出就变化；被调量不变化，不管静态偏差有多大，输出也不会变化。 </li>
+</ul>
+<p>##I纯积分作用趋势图的特征分析##<br>I是积分作用。如果调机器的输入偏差不等于零，就让调节器的偏差按照一定的速度一直朝一个方向累加下去。<br>相当于一个斜率发生器。启动这个发生器的前提是调节器的输入偏差不等于0，斜率的大小与两个参数有关：输入偏差的大小积分时间。</p>
+<ul>
+<li>输出的升降与被调量的升降无关，与输入偏差的正负有关。</li>
+<li>输出的升降与被调量的大小无关。</li>
+<li>输出的斜率与被调量的大小有关。 </li>
+<li>被调量不管怎么变化，输出始终不会出现节跃扰动。</li>
+<li>被调量达到顶点的时候，输出的变化趋势不变，速率开始减缓。</li>
+<li>输出曲线达到顶点的时候，必然是输入偏差等于零的时候。</li>
+</ul>
+<p>##D纯微分作用趋势图的特征分析##<br>D就是微分作用。被调量不懂，输出不动；被调量移动，输出马上跳。</p>
+<ul>
+<li>对于正作用的调节系统，顶点、谷底均发生在同一时刻。</li>
+<li>对于负作用的调节系统，被调量的顶点就是输出的谷底，谷底就是输出的顶点。</li>
+<li>对于正作用的调节系统，被调量的曲线上升，输出曲线就上升；被调量曲线下降，输出曲线就下降。两者趋势完全一样。</li>
+<li>对于负作用的调节系统，被调量曲线和输出曲线相对。波动周期完全一致。</li>
+<li>只要被调量变化，输出就变化；被调量不变化，不管静态偏差有多大，输出也不会变化。 </li>
+</ul>
+<p>##比例积分作用的特征曲线分析##<br>比例积分作用，就是在被调量波动的时候，纯比例和纯积分作用的叠加，简单的叠加。</p>
+<p>##整定参数的几个原则##</p>
+<ol>
+<li>把串级调节系统孤立成两个单回路。把主、副调隔离开来，先整定一个回路，再全面考虑；</li>
+<li>至于先整定内回路还是先整定外回路，因系统而异。一般来说，对于调节周期长的系统可以先整定内回路。我们还可以手动调整系统稳定后，投入自动，先整定内回路；</li>
+<li>把相互耦合的系统解耦为几个独立的系统，在稳态下，进行参数判断。让各个系统<br>之间互不干扰，然后再考虑耦合；</li>
+<li>把P、I、D隔离开来。先去掉积分、微分作用，让系统变为纯比例调节方式。然后<br>再考虑积分，然后再考虑微分。</li>
+</ol>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined" target="_blank" rel="noopener">筠子</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://kyunsmile.github.io/2015/08/06/PID%20part1/">http://kyunsmile.github.io/2015/08/06/PID%20part1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://kyunsmile.github.io">琴韵居</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/PID/">PID    </a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2015/08/07/PID%20part2/"><img class="prev_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>PID part2</span></div></a></div><div class="next-post pull_right"><a href="/2015/06/29/%E6%9D%82%E5%BF%97%E3%80%8A%E8%AF%BB%E8%80%85%E3%80%8B/"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>杂志《读者》</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2015/08/07/PID part2/" title="PID part2"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png"><div class="relatedPosts_title">PID part2</div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = false == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'S6M2ACfRK3ikdgAO3LqOyuSk-gzGzoHsz',
+  appKey:'oLXw2HabYWKSWLj05DEatVRb',
+  placeholder:'Please leave your footprints',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></div><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2019 By 筠子</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script async src="/js/search/local-search.js"></script><script src="/js/tw_cn.js"></script><script>translateInitilization()
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
